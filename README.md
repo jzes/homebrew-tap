@@ -40,8 +40,8 @@ brew test jzes/tap/morse
 
 A atualização da fórmula é manual, após a publicação de uma versão estável no [repositório do Morse](https://github.com/jzes/morse/releases).
 
-1. Atualize `version` em `Formula/morse.rb`.
-2. Atualize as quatro URLs para a nova tag e os quatro hashes `sha256`, de acordo com o `checksums.txt` da release. Baixe os arquivos e confira seus hashes antes de publicar.
+1. Atualize as quatro URLs em `Formula/morse.rb` para a nova tag. O Homebrew identifica a versão automaticamente pelas URLs.
+2. Atualize os quatro hashes `sha256`, de acordo com o `checksums.txt` da release. Baixe os arquivos e confira seus hashes antes de publicar.
 3. Verifique a fórmula e execute o teste no sistema disponível:
 
    ```sh

@@ -1,7 +1,6 @@
 class Morse < Formula
   desc "Decode Morse code in the terminal"
   homepage "https://github.com/jzes/morse"
-  version "0.1.1"
   license "MIT"
 
   on_macos do
@@ -33,6 +32,6 @@ class Morse < Formula
   test do
     assert_equal "sos\n", shell_output("#{bin}/morse '... --- ...'")
     assert_equal "hello world\n",
-                 pipe_output("#{bin}/morse", ".... . .-.. .-.. ---  .-- --- .-. .-.. -..", 0)
+                 pipe_output(bin/"morse", ".... . .-.. .-.. ---  .-- --- .-. .-.. -..", 0)
   end
 end
