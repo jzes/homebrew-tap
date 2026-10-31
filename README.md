@@ -36,6 +36,26 @@ brew upgrade jzes/tap/morse
 brew test jzes/tap/morse
 ```
 
+## Reqman
+
+[Reqman](https://github.com/jzes/reqman) é um cliente HTTP no terminal para gerenciar requisições em arquivos `.curl`.
+
+```sh
+brew install jzes/tap/reqman
+reqman ./requests
+```
+
+A fórmula instala os binários oficiais com verificação SHA-256, sem precisar de Go.
+Há suporte a macOS (Apple Silicon e Intel) e Linux (ARM64 e x86-64).
+
+Para atualizar e testar:
+
+```sh
+brew update
+brew upgrade jzes/tap/reqman
+brew test jzes/tap/reqman
+```
+
 ## Manutenção
 
 A atualização da fórmula é manual, após a publicação de uma versão estável no [repositório do Morse](https://github.com/jzes/morse/releases).
@@ -55,6 +75,10 @@ A atualização da fórmula é manual, após a publicação de uma versão está
 
 Pré-releases não são publicadas nesta fórmula.
 
+Para o Reqman, siga o mesmo processo após uma release estável em
+[jzes/reqman](https://github.com/jzes/reqman/releases), atualizando as quatro URLs
+e hashes em `Formula/reqman.rb` e usando `jzes/tap/reqman` nos comandos de validação.
+
 ## Licença
 
-Este tap é distribuído sob a [licença MIT](LICENSE). O Morse também usa a [licença MIT](https://github.com/jzes/morse/blob/main/LICENSE).
+Este tap é distribuído sob a [licença MIT](LICENSE). O Morse e o Reqman também usam a licença MIT.
